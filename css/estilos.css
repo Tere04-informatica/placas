@@ -1,0 +1,48 @@
+
+/* Estilos para todo el body*/
+body {
+    color: #ffae00; /* Color del texto */
+    font-family: 'Creepster', cursive; /* Fuente de estilo terrorífico */
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Estilos para encabezado h1*/
+h1{
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px #ff0000cc; /* Sombra de texto */
+    animation: flicker 2s infinite; /* Animación de parpadeo */
+}
+
+/* Estilos para h2*/
+h2{
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px #ff0000cc; /* Sombra de texto */
+}
+
+/* Estilos para el texto*/
+p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px #ff000080;
+}
+
+/* Estilos para en cuadro que no es fondo*/
+.container{
+    background-color: #1a1a1a;
+    border: 4px groove #ce8c11;
+    padding: 0%;
+}
+
+/* Agregar animación de fondo */
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
