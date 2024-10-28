@@ -4,18 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba 4</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Grenze+Gotisch:wght@100..900&family=Jolly+Lodger&display=swap" rel="stylesheet">
 </head>
 
 <body background="img/fondo.jpg">
-    
+
     <div class="container">
-        <h1>JUEGA O MUERE</h1>
-        <h2>Prueba 4</h2>
-        <p>¿Te atreves a jugar con lo desconocido?</p>
+        <div class="content">
+            <h1>JUEGA O MUERE</h1>
+            <h2>Jugaré, no abandonaré</h2>
+    
+            <button id="playVideoButton">CONTINUAR</button>
+        </div>
+
+        <div id="videoContainer" class="hidden">
+            <video id="video" width="640" height="360" controls>
+                <source src="video/placas.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+  
+        <div id="imageButtonContainer" class="hidden">
+            <button id="showImageButton">PISTA</button>
+        </div>
+
+        <div id="imageContainer" class="hidden">
+            <img id="image" src="img/placas.jpg" alt="Imagen">
+            <a href="https://maps.app.goo.gl/ZgHwdFury9Jmho4U8"><button id="miubicacion">UBICACIÓN</button></a>
+        </div>
     </div>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
